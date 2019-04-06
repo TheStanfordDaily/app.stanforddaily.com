@@ -80,7 +80,7 @@
                     <div class="home"></div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 tsd-info mt-4 hidden-xl-down">
+            <div class="col-12 col-sm-6 tsd-info mt-4">
                 <div style="flex: 1">
                     <h1 class="display-3">Don't wait.</h2>
                         <h2 class="display-4 mt-4 mb-4">Download the Stanford Daily App today.</h2>
@@ -106,7 +106,16 @@
                             digital media and business for the next generation of reporters.<br /><br />
                             Learn more about the Daily at <a
                                 href="https://www.stanforddaily.com/">www.stanforddaily.com</a>
+
                         </div>
+                        <div class="text-center">
+                                <a href="https://www.stanforddaily.com/email-digests/">
+                                    <button class="mt-4 btn tsd-button">Subscribe to our Email Digest</button>
+                                </a><br>
+                                <a href="https://www.stanforddaily.com/donate/">
+                                    <button class="mt-4 btn tsd-button">Donate</button>
+                                </a>
+                            </div>
                 </div>
             </div>
         </div>
@@ -117,12 +126,6 @@
         var src = srcs[Math.floor(Math.random() * srcs.length)];
         var image = document.getElementById("mainImage");
         image.src = src;
-
-        function nextImage() {
-            var src = image.src;
-            var srcIndex = srcs.indexOf(src);
-            image.src = srcs[(srcIndex + 1) % srcs.length]
-        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
