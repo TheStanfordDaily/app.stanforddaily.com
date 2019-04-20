@@ -57,15 +57,13 @@
     <script>
     function android_click(e) {
         e.preventDefault();
-        gtag_report_conversion_android_click("https://play.google.com/store/apps/details?id=com.Stanford.Daily.App&hl=en_US");
+        return gtag_report_conversion_android_click("https://play.google.com/store/apps/details?id=com.Stanford.Daily.App&hl=en_US");
     }
     function ios_click(e) {
         e.preventDefault();
-        gtag_report_conversion_ios_click("https://itunes.apple.com/app/stanford-daily/id1341270063");
+        return gtag_report_conversion_ios_click("https://itunes.apple.com/app/stanford-daily/id1341270063");
     }
     </script>
-
-
 </head>
 
 <body>
