@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <title>Download the Stanford Daily App</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -57,15 +59,13 @@
     <script>
     function android_click(e) {
         e.preventDefault();
-        gtag_report_conversion_android_click("https://play.google.com/store/apps/details?id=com.Stanford.Daily.App&hl=en_US");
+        return gtag_report_conversion_android_click("https://play.google.com/store/apps/details?id=com.Stanford.Daily.App&hl=en_US");
     }
     function ios_click(e) {
         e.preventDefault();
-        gtag_report_conversion_ios_click("https://itunes.apple.com/app/stanford-daily/id1341270063");
+        return gtag_report_conversion_ios_click("https://itunes.apple.com/app/stanford-daily/id1341270063");
     }
     </script>
-
-
 </head>
 
 <body>
